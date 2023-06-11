@@ -1,48 +1,40 @@
 # Project Name
-> Outline a brief description of your project.
+> Melanoma Detection : A multiclass classification model using a custom convolutional neural network in TensorFlow.
 
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
 
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+#### Problem Statement
+- To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. 
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+#### Business problem to be solved
+- A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+
+#### Dataset
+- The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the [International Skin Imaging Collaboration (ISIC)](https://www.kaggle.com/datasets/nodoubttome/skin-cancer9-classesisic). All images were sorted according to the classification taken with ISIC , and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- We tried to run differend models, the first one utilising the raw data set. It was observed that the model was overfitting and the accuracy was also low.
+- The model was improved by using manual agmentation using RandomFlip and RandomRotation. It was observed that the problem of overfitting was resolved. However, the overall accuracy of thr model was still very low.
+- Then we came up with the final model, that uses augmentor library to rebalance the classes. It was observed that the overall accuracy significantly improved without any overfitting/ underfitting.
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+- Augmentor 
+- Keras 
+- TensorFlow 
+- Matplotlib
+- Numpy
+- Pandas
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@Suraj-Kumar-Panigrahi] - feel free to contact me!
 
 
 <!-- Optional -->
